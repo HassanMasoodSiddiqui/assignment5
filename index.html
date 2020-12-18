@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>File Upload</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <form action="upload1.php" method = "POST" enctype="multipart/form-data">
+    <fieldset>
+        <legend>UPLOAD A FILE:</legend><br>
+		<br><div class="form">
+        <input name="file" id="entry_value" ref="fileInput" type="file" onchange="getFileName()"  >
+        <div>     
+            <img src="upload.png" alt="upload" width="7%" class="mx-2">
+            Click or Upload your files 
+           </div>
+        <span id="fileName" >
+        </span>
+     </div>
+	 <br><br>
+	 <br><br></fieldset><br>
+      <input type = "submit" value = "Upload" name = "submit">
+</form>
+</body>
+</html>
